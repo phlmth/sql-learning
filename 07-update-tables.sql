@@ -1,0 +1,14 @@
+-- -- postgres
+-- ALTER TABLE employers 
+-- ALTER COLUMN is_hiring SET DEFAULT FALSE;
+
+-- ALTER TABLE conversation 
+-- ALTER COLUMN date_sent SET DEFAULT CURRENT_TIMESTAMP;
+
+-- mysql
+ALTER TABLE employers 
+MODIFY COLUMN is_hiring BOOLEAN DEFAULT FALSE;
+
+ALTER TABLE conversation
+MODIFY COLUMN date_sent TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+
